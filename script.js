@@ -335,3 +335,8 @@ document.addEventListener("keydown",ev=>{
 document.addEventListener("keyup",ev=>{if(ev.code==="Space")stopFiring();});
 renderShootRound();
 startMission();
+
+/* BLOQUEO CLIC DERECHO */
+document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
